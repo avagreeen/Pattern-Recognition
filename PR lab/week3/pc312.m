@@ -1,0 +1,16 @@
+a=gendatb([50 50]);
+h=[1 1]';k=1;
+w=parzenc(a,h);
+v=knnc(a,k);
+b=naivebc(a,4);
+q=qdc(a);
+l=ldc(a);
+g=gaussm(a);
+scatterd(a);
+plotc(w);
+plotc(v,'r');
+plotc(b,'y');
+plotc(q,'b');
+plotc(l,'g');
+plotc(g,'w');
+%axis([-8 8 -8 8]);

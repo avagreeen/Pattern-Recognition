@@ -1,0 +1,18 @@
+a=gendatb([50 50]);
+newtrain=a;
+newtrain(:,2)=10*newtrain(:,2);
+a=newtrain;
+h=[1 1];
+w=parzenc(a,h);
+v=knnc(a);
+%f=fisherc(a);
+q=qdc(a);
+l=ldc(a);
+n=nmc(a);
+scatterd(a);
+plotc(w);
+plotc(v,'r');
+%plotc(f,'y');
+plotc(q,'b');
+plotc(l,'g');
+plotc(n,'y');

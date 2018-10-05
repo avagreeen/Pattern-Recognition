@@ -1,0 +1,9 @@
+a=sqrt(4)*randn(10);
+pa=9/10;
+b=sqrt(1)*rand(10)+1;
+pb=1/10;
+data=[a;b];
+label_a=repmat(['a'],10,1);
+label_b=repmat(['b'],10,1);
+label=[label_a;label_b];
+dataset=prdataset(data,label);
